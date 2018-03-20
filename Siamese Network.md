@@ -20,7 +20,7 @@ siamese architecture。在这篇论文中，作者用这个网络去做面部识
 
 网络结构
 
-![architecture]https://github.com/leizan/Neutral-Network/blob/master/architecture.png;
+![architecture] Neutral-Network/architecture.png ;
 上图是论文中的网络结构图，左右两边两个网络是完全相同的网络结构，它们共享相同的权值W，输入数据为一对图片（X1,X2,Y）,其中Y=0表示X1和X2属于同一个人的脸，
 Y=1则表示不为同一个人。即相同对为（X1,X2,0）,欺骗对为（X1,X2’,1）针对两个不同的输入X1和X2，分别输出低维空间结果为Gw(X1)和Gw(X2)，它们是由X1和X2经过
 网络映射得到的。然后将得到的这两个输出结果使用能量函数Ew(X1,X2)进行比较。
